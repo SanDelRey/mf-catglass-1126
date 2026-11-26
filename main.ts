@@ -7,7 +7,7 @@ const EXCUSE =
   "The glass and I had a disagreement about who owns this table. " +
   "The floor settled it.";
 
-// 80 characters; the gate allows 1 to 200 of UTF-8 text.
+// 80 characters, one sentence; the gate allows 1 to 200 of UTF-8 text.
 const dir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 mkdirSync(dir, { recursive: true });
 writeFileSync(dir + "/entry.txt", EXCUSE + "\n", "utf8");
